@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cars.com Monthly Payment Calculator",
+  "description": "This extension helps you calculate your monthly payment on a car at cars.com when you provide some info.",
+  "version": "0.1",
+  "icons": { "16": "icon.png"},
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+    "background.js"
+    ]
+  },
+
+
+  "permissions": [
+    "tabs", "https://www.cars.com/*", "storage"
+  ]
+
+}
